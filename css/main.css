@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+}
+.nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 25px 5px 25px;
+}
+
+.nav__img {
+  max-width: 85px;
+  max-height: 30px;
+}
+.nav__desktop {
+  display: none;
+}
+.nav__burger {
+  width: 30px;
+  height: 30px;
+  color: #839faf;
+}
+
+.glass {
+  display: none;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 10px 40px;
+}
+.results__p {
+  font-family: "Sniglet", cursive;
+  color: #839faf;
+}
+.results__p--number {
+  font-weight: 600;
+}
+.results__label {
+  display: none;
+}
+.results__select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #5aa8f0;
+  border-color: transparent;
+  padding-right: 10px;
+}
+.list {
+  padding-inline-start: 0;
+}
+.company {
+  min-width: 295px;
+  height: 430px;
+  margin: 14px 40px 14px 40px;
+  border: #839faf9d 1px solid;
+  border-radius: 0.5cm;
+}
+.company__logo {
+  height: 100px;
+  margin: 10px 20px 25px 20px;
+  padding: 40px 30px 40px 30px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.company__logo--name {
+  padding-left: 25px;
+  font-family: "Sniglet", cursive;
+  font-size: 16px;
+  color: #1a416a;
+  text-align: left;
+}
+.company__description {
+  padding: 0 15px 15px 25px;
+  color: #56788c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+.line {
+  max-width: 90%;
+}
+.company__donation {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.company__donation--number {
+  margin-bottom: 0;
+  font-family: "Sniglet", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a416a;
+}
+.company__donation--p {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #56788c;
+}
+.empty__logo {
+  min-width: 193px;
+  min-height: 91.781px;
+  margin: 10px 20px 25px 20px;
+  padding: 40px 30px 40px 30px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.empty__logo--name {
+  height: 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__description--div {
+  height: 16px;
+  margin: 0 25px 8px 25px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__description--dif {
+  height: 16px;
+  margin: 0 130px 8px 25px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__donation {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.empty__donation--number {
+  height: 22px;
+  width: 50px;
+  margin-bottom: 0;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__donation--number2 {
+  height: 22px;
+  width: 120px;
+  margin-bottom: 0;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__donation--p {
+  height: 16px;
+  width: 105px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.empty__donation--p2 {
+  height: 16px;
+  width: 80px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  background-color: #eff5f9;
+  border-radius: 0.5cm;
+}
+.hero {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav__img {
+    position: absolute;
+  }
+  .nav__burger {
+    padding-right: 80px;
+    display: flex;
+    gap: 20px;
+    transform: translate(45vw);
+  }
+  .glass {
+    display: contents;
+  }
+  .nav__divisor {
+    margin-bottom: 0px;
+  }
+  .hero {
+    background-image: url(../images/backgroundTablet.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-size: cover;
+    margin-top: 0;
+  }
+  .hero__text {
+    margin-left: 80px;
+    font-family: "Sniglet", cursive;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a416a;
+  }
+  .hero__desktop {
+    display: none;
+  }
+  .results__label {
+    display: contents;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #56788c;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .company {
+    width: 295px;
+  }
+  .results {
+    margin: 20px 100px 10px 100px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .nav {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__img {
+    position: inherit;
+    margin-right: 520px;
+  }
+  .nav__burger {
+    display: none;
+  }
+  .nav__desktop {
+    display: contents;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #56788c;
+  }
+
+  .nav__desktop--green:hover {
+    cursor: pointer;
+    color: #37c9a1;
+  }
+  .nav__desktop--glass:hover {
+    cursor: pointer;
+    background-color: #56788c25;
+    border-radius: 50%;
+    padding: 12px;
+  }
+  .nav__desktop--enter:hover {
+    cursor: pointer;
+    border: 2px solid #dbe8ef;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .nav__desktop--sign {
+    color: #ffffff;
+    background-color: #37c9a1;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+  }
+  .nav__desktop--sign:hover {
+    cursor: pointer;
+    background-color: #68d3b5;
+  }
+  .circle {
+    color: #37c9a1;
+    transform: translate(0, -10px);
+  }
+  .hero {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    width: 100%;
+    height: 210px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .hero__text {
+    font-family: "Sniglet", cursive;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a416a;
+  }
+  .hero__desktop {
+    margin-left: 80px;
+    display: contents;
+    display: flex;
+  }
+  .hero__find {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5aa8f0;
+  }
+  .hero__register {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 15px;
+    color: #56788c;
+  }
+  .hero__register--link {
+    color: #56788c;
+  }
+  .company {
+    min-width: 385px;
+  }
+}
